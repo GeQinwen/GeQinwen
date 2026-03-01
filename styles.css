@@ -1,0 +1,271 @@
+/*
+  Link colors: edit the "a" rule below. More palettes: coolors.co, tailwindcss.com/docs/customizing-colors, material.io/design/color
+  Font options (Google Fonts). In index.html, swap the <link> and use these in body / .name h1:
+
+  Headings (serif):
+  - Crimson Pro (current) — classic, readable
+  - Lora — warm, editorial
+  - Playfair Display — more decorative
+  - Source Serif 4 — clean, modern serif
+  - Literata — book-like
+  - Libre Baskerville — traditional
+
+  Body (sans):
+  - Source Sans 3 (current) — neutral, clear
+  - DM Sans — geometric, friendly
+  - Work Sans — professional
+  - Inter — UI-style, very readable
+  - Nunito Sans — soft, rounded
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Lora", Georgia, serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0.75rem;
+}
+
+/* Center column, max-width, empty sides */
+.center {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* Name */
+.name {
+  margin-bottom: 3rem;
+  padding-bottom: 0;
+}
+
+.name h1 {
+  margin: 0;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3.25rem;
+}
+
+section h2 {
+  margin: 0 0 1rem;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+section h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #444;
+}
+
+section p,
+section ul {
+  margin: 0 0 0.6rem;
+  color: #333;
+  font-size: 1em;
+}
+
+section ul {
+  padding-left: 1.25rem;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.intro-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.intro-headshot {
+  flex-shrink: 0;
+  width: 160px;
+}
+
+.intro-headshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro p {
+  color: #333;
+}
+
+@media (max-width: 560px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro-headshot {
+    width: 130px;
+  }
+}
+
+.links {
+  text-align: center;
+  margin: 0 0 3rem;
+  color: #333;
+  font-size: 1em;
+}
+
+/* Link color: soft blue-violet. Other options: #5b7cba (more blue), #7c6bb0 (more purple), #5c7a9e (muted blue) */
+a {
+  color: #5c6bc0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3949a0;
+  text-decoration: underline;
+}
+
+/* News list */
+.news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  margin-bottom: 0.85rem;
+  padding-left: 0;
+}
+
+.news-list time {
+  display: inline-block;
+  min-width: 5rem;
+  font-variant-numeric: tabular-nums;
+  color: #666;
+  font-size: 1em;
+}
+
+/* Papers and Preprints */
+.publications .paper {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.publications .paper:last-child {
+  margin-bottom: 0;
+}
+
+.paper-img {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.paper-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.paper-body {
+  flex: 1;
+  min-width: 0;
+  font-size: 1rem;
+}
+
+.paper-title {
+  font-family: "Crimson Pro", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.paper-authors {
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.paper-links {
+  font-size: 0.92rem;
+  margin-bottom: 0.2rem;
+}
+
+.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.paper-icon {
+  display: inline-flex;
+  line-height: 1;
+}
+
+.paper-icon svg {
+  display: block;
+}
+
+.paper-links-sep {
+  display: inline-block;
+  width: 1.5em;
+}
+
+.paper-venue {
+  font-size: 0.92rem;
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3.5rem;
+  padding-top: 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .name h1 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
