@@ -1,6 +1,6 @@
 # Hi 👋
 
-I'm a first-year Computer Science PhD student at Vanderbilt University, advised by Prof. Tyler Derr.
+I'm a second-year Computer Science PhD student at Vanderbilt University, advised by Prof. Tyler Derr.
 
 My research focuses on multi-agent systems, agentic AI, and computational social science.
 
